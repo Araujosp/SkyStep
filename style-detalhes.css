@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Goldman:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    color: white;
+}
+
+.header-menu{
+    width: 100%;
+    padding: 25px;
+    padding-right: 30px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5f9ea0;
+}
+
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style:none;
+    padding: 0px;
+    gap: 50px;
+}
+
+.navbar li:hover{
+    
+}
+
+.navbar li{
+    color: #fff;
+    text-decoration: dotted;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    background-color: #313030;
+    width: 100%;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.container img{
+    min-height: 50px;
+    object-fit: contain;
+}
+
+body{
+    background: linear-gradient(#201d42,#5f9ea0);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura da tela inteira */
+}
+
+section {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.logo {
+    height: 100px;
+}
+.carrinho{
+    max-height:50px;
+}
+
+.btn {
+    background: #69c3e6;
+    color: #0d1b2a;
+    padding:15px;
+    font-size:15px;
+    font-weight: 700;
+    border-radius: 40px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    transition: 0.3s ease;
+    margin: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #000;
+    color: var(--cor-ciano-claro);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #363131;
+    padding: 20px  20px;
+    margin-top: 150px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-box {
+    max-width: 250px;
+    flex: 1;
+}
+
+.footer-box p {
+    font-family: "roboto";
+    color: whitesmoke;
+}
+
+.footer-box h3 {
+    margin-bottom: 10px;
+    color: #69c3e6;
+}
+
+.footer-box a {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footer-box a:hover{
+    color: #4cb1dd;
+}
+
+
+.footer-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-box input, .footer-box textarea {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+.label-contato {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    color: white;
+}
+
+.label-contato h3 {
+    color: rgb(0, 201, 201);
+    font-family: "roboto";
+}
+
+.label-contato input,::placeholder{
+    border-radius:30px;
+    text-align: center;
+}
+
+
+
+.box {
+    width: 400px;
+    height: 260px;
+    /* Degradê azul-acinzentado da primeira foto */
+    background: linear-gradient(180deg, #3d5a69 0%, #21303b 100%); 
+    border-radius: 40px; 
+    padding:20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+#logo-footer{
+    height:200px;
+    width: auto;
+}
+
+#tel-footer{
+    margin-top: 30px;
+    height:110px;
+    width: 100px;
+}
+
+
+.produto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.produto-box {
+    display: flex;
+    gap: 50px;
+    background: linear-gradient(180deg, #3d5a69 0%, #21303b 100%);
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 1000px;
+    width: 100%;
+    color: white;
+}
+
+
+.produto-img img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.produto-info h1 {
+    font-size: 28px;
+}
+
+.descricao {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.preco {
+    font-size: 32px;
+    color: rgb(0, 195, 255);
+    font-weight: bold;
+}
+
+/* TAMANHOS */
+.tamanhos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tamanhos button {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #5f9ea0;
+    color: white;
+}
+
+.tamanhos button:hover {
+    background: #00c3ff;
+}
+
+.acoes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-secundario:hover {
+    background: #69c3e6;
+    color: #0d1b2a;
+}
+
+
+
