@@ -3,15 +3,6 @@ require_once 'init.php';
 
 $categoria_get = isset($_GET['categoria']) ? trim ($_GET['categoria']): ''; 
 /*
-if (isset($_GET['categoria'])) {
-    $categoria_get = trim($_GET['categoria']);
-} else {
-    $categoria_get = '';
-}
-*/
-
-
-
 // isset = se a variavel categoria existir
 //($_get['categoria']) coleta os dados da URL
 // ? = 
@@ -25,10 +16,10 @@ trim()	limpa espaços
 ''	vazio
 */
 
+//if(isset($_GET['categoria'])) {
+  //  print $_GET['categoria'];
+//}
 
-if(isset($_GET['categoria'])) {
-    print $_GET['categoria'];
-}
 ?>
 
 <!DOCTYPE html>
@@ -92,9 +83,7 @@ foreach ($categorias as $keycat => $nome){
     require 'partials/footer.php'
     ?>
 </body>
-
 </html>
-
 <!--
 tanto de linha que economizei
 <div class="card-mae" id="produtos">
@@ -109,52 +98,3 @@ tanto de linha que economizei
                 <a href="detalhes-produto.php"><div class="btn">Compre Aqui</div></a>
             </div>
         </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="https://imgcentauro-a.akamaihd.net/660x660/990945HLA2.jpg">
-            </div>
-            <div class="card-content">
-                <h3>Giannis Immortality 4</h3>
-                <p>Performance e conforto para dominar o jogo</p>
-                <span>R$ 250,00</span>
-                <a href="cadastro.php"><div class="btn">Compre Aqui</div></a> 
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="https://imgcentauro-a.akamaihd.net/800x800/996052RNA14.jpg">
-            </div>
-            <div class="card-content">
-                <h3>Nike A'One</h3>
-                <p>Inspirado na energia e força dentro das quadras</p>
-                <span>R$ 250,00</span>
-                <a href="cadastro.php"><div class="btn">Compre Aqui</div></a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="https://imgcentauro-a.akamaihd.net/800x800/9904273LA2.jpg">
-            </div>
-            <div class="card-content">
-                <h3>Adidas Ownthegame 3.0</h3>
-                <p>Tração e estabilidade para movimentos rápidos</p>
-                <span>R$ 250,00</span>
-                <a href="cadastro.php"><div class="btn">Compre Aqui</div></a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="https://imgcentauro-a.akamaihd.net/660x660/M14X7O51A8.jpg">
-            </div>
-            <div class="card-content">
-                <h3>Nike Precision VII</h3>
-                <p>Domine a Quadra com o Tênis Nike Precision VII Masculino</p>
-                <span>R$ 350,00</span>
-                <a href="cadastro.php"><div class="btn">Compre Aqui</div></a>
-            </div>
-        </div>
-    </div> -->
